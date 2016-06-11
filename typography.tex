@@ -57,10 +57,14 @@
 \begin{document}
 
 % title and table of contents
-\maketitle
-\tableofcontents[hideallsubsections]%,pausesections]
+\frame{\maketitle}
+\frame{\tableofcontents[hideallsubsections]}
 
 % ------
+
+Dies ist eine Notizensammlung zum zugehörigen Vortrag
+\enquote{Typographie – ein Einblick} auf der 3.~GPN der
+F3L-Community am 11.06.2016 an der Universität Regensburg.
 
 \section{Was ist Typographie?}
 \frame{\sectionpage}
@@ -431,7 +435,7 @@ Wir beginnen mit verschiedenen Unterteilungen und Begrifflichkeiten.
     {\fontfamilydroidserif Dieser Text ist geschrieben in Droid
       Serif.}\\<all>
     {\fontfamilylatinmodern Dieser Text ist geschrieben in Latin
-      Modern.}\\<article>[2pt]
+      Modern.}\\<article>
     \mode<article>{
       Serifenschriften haben den großen Vorteil, dass Serifen die
       Zeilenorientierung unterstützen. Antiqua Serifenschriften
@@ -441,8 +445,8 @@ Wir beginnen mit verschiedenen Unterteilungen und Begrifflichkeiten.
   \end{block}
   \begin{block}{Egyptienne}<+->
     auch \emph{serifenbetonte Linear-Antiqua}; 
-    betonte Serifen, glm. Dicke\\<all>[2pt]
-    {\fontfamilyrobotoslab Dieser Text ist geschrieben in Roboto Slab.}\\<article>[2pt]
+    betonte Serifen, glm. Dicke\\<all>
+    {\fontfamilyrobotoslab Dieser Text ist geschrieben in Roboto Slab.}\\<article>
     \mode<article>{
       Diese Serifenschriften erweisen sich oft als vorteilhaft bei
       schlechter Bildschirmauflösung, da sie keine schmalen Stege
@@ -452,7 +456,7 @@ Wir beginnen mit verschiedenen Unterteilungen und Begrifflichkeiten.
   \end{block}
   \begin{block}{Grotesk (Sans Serif)}<+->
     serifenlos\\<all>
-    {\fontfamilyfirasans Dieser Text ist geschrieben in Fira Sans.}\\<article>[2pt]
+    {\fontfamilyfirasans Dieser Text ist geschrieben in Fira Sans.}\\<article>
     \mode<article>{
       Serifenlos haben kein Problem mehr mit schlechter
       Bildschirmdarstellung, sind daher historisch beliebt für
@@ -591,12 +595,11 @@ Erscheinungsbild einzelner Zeichengruppen verbessern kann.
     best. Zeichenpaaren
     \begin{center}
       \includegraphics[height=.2\paperheight]{Kerning_without.png}
-      \hfill
       \includegraphics[height=.2\paperheight]{Kerning_with.png}
     \end{center}
     \vfill}
   CSS:\\ 
-  \code{text-rendering: optimizeLegibility; \\<presentation>
+  \code{text-rendering: optimizeLegibility; \\<all>
     <browser-prefix>font-feature-settings: kern;}
 \end{frame}
 
@@ -624,6 +627,23 @@ Erscheinungsbild einzelner Zeichengruppen verbessern kann.
     \vfill
   }
   CSS: \code{text-rendering: optimizeLegibility;}  
+\end{frame}
+
+% ---
+
+\subsection{Zusammenfassung}
+\begin{frame}
+  \frametitle<presentation>{Zusammenfassung}
+  \begin{enumerate}
+  \item Inhalt richtig eingeben
+  \item Schrift auswählen anhand von 
+    \begin{itemize}
+    \item Darstellungsmedium ($\Rightarrow$ Serifen, Grauwert, Weite)
+    \item Wirkung
+    \item Qualität, Features
+    \end{itemize}
+  \item Features nutzen (Kerning, Ligaturen, etc.)
+  \end{enumerate}
 \end{frame}
 
 % ------
@@ -770,7 +790,7 @@ Elementen (z.\,B. Absätzen) bei.
     Textbereich/Vordergrund und Rand/Hintergrund (oder mehr
     Ebenen). Wichtig: Orientiere dich immer am eigentlichen
     Textkörper/Inhalt!}
-  \begin{itemize}
+  \begin{itemize}[<+->]
   \item max. Zeilenbreite 2–3 Alphabete\\
     \mode<article>{sonst geht der Zeilenbezug verloren}
     abcdefghjklmnopqrstuvwxyzabcdefghjklmnopqrstuvwxyz
@@ -894,7 +914,7 @@ Blocksatz basiert auf leichtem Dehnen der Wortabstände.
   \mode<presentation>{\vfill}
   CSS: \code{hyphens: auto;} (magere Unterstützung)
 
-  \begin{exampleblock}{Beispiel für Notwendigkeit}
+  \begin{exampleblock}{Beispiel für Notwendigkeit}<2->
     Schmale Spaltenbreite oder
     \href[pdfnewwindow]{./examples/hyphenation.pdf}{lange Wörter}.
   \end{exampleblock}
@@ -975,7 +995,7 @@ möglichst selten verwenden.
       \mode<article>{bei den automatisch erzeugten}
     \end{itemize}
   \end{block}
-\begin{block}{\uppercase{Versalien}}<+-|only@+-5>
+  \begin{block}{\uppercase{Versalien}}<+-|only@+-5>
   \mode<article>{Versalien stammen aus der Schreibmaschinenzeit und
     werden heute eher als aufdringliches Geschrei bei Vorkommen im
     Fließtext empfunden. Wenn möglich, auf richtige Kapitälchen
@@ -1203,8 +1223,30 @@ aber unter Hervorhebungen schon ausreichend behandelt worden.
   \end{itemize}
 \end{frame}
 
+% ---
+
+\subsection{Zusammenfassung}
+\begin{frame}
+  \frametitle<presentation>{Zusammenfassung}
+  \begin{enumerate}
+    \item Grauwert optimieren anhand von
+      \begin{itemize}
+        \item Selbstleuchtendes Medium? ($\Rightarrow$ Farbe)
+        \item Leserabstand ($\Rightarrow$ Schriftgröße)
+        \item Mediengröße ($\Rightarrow$ Satzspiegel)
+        \item Schrift ($\Rightarrow$ Zeilen-, Absatzabstand)
+      \end{itemize}
+    \item Textausrichtung, Worttrennung
+    \item einheitliche Hervorhebungen
+    \item Sonderelemente sinnvoll einbinden (Textfluss nicht
+      zerreissen)
+  \end{enumerate}
+\end{frame}
+
+
 % ------
 
+\appendix
 \section{Beispiele}
 % \begin{frame}{Konsistenz}
 %   \begin{itemize}
@@ -1228,7 +1270,7 @@ aber unter Hervorhebungen schon ausreichend behandelt worden.
   \item[Aufmerksamkeit] auffällig anders ist gut, ausprobieren
   \end{description}
   \begin{exampleblock}{Beispiel}<+->
-    Ein Vergleich von einem \href{./examples/cv_besser.pdf}{guten}
+    Ein Vergleich von einem \href{./examples/cv.pdf}{guten}
     und einem \href{./examples/cv_besser.pdf}{besseren}.%
     \mode<article>{
       Beide haben eine gute Struktur, schöne Hervorhebung und
@@ -1248,7 +1290,7 @@ aber unter Hervorhebungen schon ausreichend behandelt worden.
     \mode<article>{– gerade bei Sicherheitsrelevanten Dokumenten muss
       Lesbarkeit (d.\,h. das Durchhaltevermögen des Lesers) an
       oberster Stelle stehen.}
-  \item \href[pdfnewwindow]{./examples/}%
+  \item \href[pdfnewwindow]{./examples/gutachten.pdf}%
     {unseriöses Gutachten}
     \mode<article>{– selbstsprechend. Achte bei professionellen
       Dokumenten auch auf ein professionelles (d.\,h. zumindest
@@ -1273,7 +1315,9 @@ aber unter Hervorhebungen schon ausreichend behandelt worden.
 
 % ------
 
-\begin{frame}{Ich will mehr! (Quellen)}
+\section{Quellen}
+\begin{frame}
+  \frametitle<presentation>{Ich will mehr! (Quellen)}
   \begin{itemize}
   \item Wikipedia
   \item \url{http://practicaltypography.com/} von Matthew Butterick

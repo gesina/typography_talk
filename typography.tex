@@ -14,7 +14,7 @@
 % Computer Modern Roman (default); short: cmr
 
 % \usepackage{droidserif} % Antiqua font; short: fdr
-\newfontfamily\fontfamilydroidserif{DroidSerif-Regular}
+\newfontfamily\fontfamilydroidserif{Droid Serif}
 
 % \usepackage[rm]{roboto} % Slab Serif font; short: RobotoSlab-LF
 \newfontfamily\fontfamilyrobotoslab{RobotoSlab-Regular}
@@ -51,7 +51,7 @@
 }
 
 % titlepage
-\title{Typographie – ein Einblick}
+\title{Einblick in Typographie}
 \author{Gesina Schwalbe}
 
 \begin{document}
@@ -65,6 +65,13 @@
 Dies ist eine Notizensammlung zum zugehörigen Vortrag
 \enquote{Typographie – ein Einblick} auf der 3.~GPN der
 F3L-Community am 11.06.2016 an der Universität Regensburg.
+
+Dieses Dokument ist als Nachschlagewerk für gängige Anwendungsfälle
+gedacht und enthält am Ende jedes Kapitels eine Zusammenfassung der
+Erkenntnisse/vorgenommenen Schritte.
+Das Dokument ist aus der Präsentation automatisch erzeugt mit dem
+\LaTeX-Paket \code{beamerarticle} und bei Weitem kein typographisches
+Musterbeispiel.
 
 \section{Was ist Typographie?}
 \frame{\sectionpage}
@@ -98,14 +105,15 @@ Typographie, d.\,h. Textkomposition!
 Der Vortrag soll wegen der Vielfältigkeit von Typographie kein striktes
 Erstellmuster für Dokumente liefern. Es wird stattdessen darauf
 eingegangen, worauf man beim Erstellen von Textdokumenten überhaupt alles
-achten kann und gegebenenfalls für häufige Fälle Umsetzungshinweise
+achten kann und es werden für häufige Anwendungsfälle Umsetzungshinweise
 gegeben.
 
 
-\begin{frame}[t]{Teilbereiche}
+\begin{frame}[t]
+  \frametitle<presentation>{Teilbereiche}
   \mode<article>{%
     Typographische Überlegungen lassen sich unterteilen in folgende
-    Bereiche, die wir betrachten werden:
+    Teilbereiche, die wir betrachten werden:
   }
   \begin{block}{Mikrotypographie}<1|only@1>
     Details einzelner Zeichen und direkte Beziehungen
@@ -152,7 +160,11 @@ Textsatz/Design/etc. eines Dokuments:
 Das kann (kompetente) Wissensvermittlung genauso wie reine
 Aufmerksamkeit, ein Wiedererkennungseffekt oder Wachsamkeit sein.
 
-\begin{frame}{Beispiele für Einflussbereiche von Typographie}
+Hier ein paar Beispiele von Bereichen, auf die Typographie
+essentiell Einfluss nehmen kann, und Anwendungsfälle, in denen sie
+extrem wichtig für die Erfüllung des Zwecks sind:
+\begin{frame}
+  \frametitle<presentation>{Beispiele für Einflussbereiche von Typographie}
   \begin{description}[Aufmerksamkeit]
   \item[Lesbarkeit] 
     Namenschilder, 
@@ -180,8 +192,8 @@ Aufmerksamkeit, ein Wiedererkennungseffekt oder Wachsamkeit sein.
 Diese Frage ist leicht beantwortet: Die meisten Standards, die wir aus
 heutigen Dokumenten kennen, haben sich historisch aufgrund technischer
 Gegebenheiten etabliert.
-Neben Ursprüngen vor Gutenberg stammt Vieles stammt aus der
-Schreibmaschinenzeit.
+Neben den Ursprüngen der Typographie noch vor Gutenberg stammt vieles
+aus der Schreibmaschinenzeit.
 Bedenke also jede typographische Entscheidung (insb. Intuition) und
 löse dich von Gewohnheiten, die durch die heutigen Mittel überholt
 sind.
@@ -268,9 +280,9 @@ Laufe der technischen Möglichkeiten anzusehen.
       Entwickler zu sehr beflügelt, unsinnige und mehr ablenkende
       Grafikelemente einzublenden.
       Die finanzielle Abhängigkeit von Werbung sorgt zudem auf
-      vielen Webseiten, insb. denen von Zeitungen, dafür,
-      dass statt den Inhalt zu unterstützen möglichst viel davon auf
-      Adds abgelenkt wird.
+      vielen Webseiten (z.\,B. denen von Zeitungen) dafür,
+      dass weniger der Inhalt unterstützt, sondern möglichst viel
+      Aufmerksamkeit auf Adds abgelenkt wird.
     }
   \end{description}
 \end{frame}
@@ -316,8 +328,8 @@ und das Zusammenspiel von kleinen Zeichengruppen (Kerning, Ligaturen).
   \mode<article>{
     Ein Zeugnis von Professionalität ist es, seine Tastatur zu kennen,
     d.\,h. die richtigen Zeichen (meist UTF-8-Symbole) für einen
-    gesuchten Ausdruck zu finden. Im Folgenden ein paar Beispiele.
-    Siehe \autoref{tab:zeichen}.
+    gesuchten Ausdruck zu finden. Ein paar Beispiele in
+    \autoref{tab:zeichen}.
     \begin{table}
       \captionabove{Die richtigen Zeichen wählen
         \label{tab:zeichen}}
@@ -340,7 +352,8 @@ und das Zusammenspiel von kleinen Zeichengruppen (Kerning, Ligaturen).
 
 \begin{frame}{Die richtigen Umbrüche}
   \mode<article>{
-    Für Umbrüche gilt dasselbe wie für jedes andere Zeichen: Wähle die
+    Für Umbrüche bzw. generell Zeichen, die im Druck nicht dargestellt
+    werden, gilt dasselbe wie für jedes andere Zeichen: Wähle die
     richtige Darstellungsform.
     Ein Absatzumbruch ist kein doppelter Zeilenumbruch und richtige
     automatische Worttrennung funktioniert nur mit den entsprechenden
@@ -500,7 +513,7 @@ Wir beginnen mit verschiedenen Unterteilungen und Begrifflichkeiten.
   \end{block}
   \begin{block}{Qualität}<+-|only@-4>
     Detailreichtum der Schrift
-    \mode<article>{variiert teilw. recht start;
+    \mode<article>{variiert teilw. recht stark;
       Zum Feststellen der Qualität am besten am Bildschirm
       heranzoomen.
       Grundsätzlich sind bessere (konsistent und professionell wirkende)
@@ -794,7 +807,7 @@ Elementen (z.\,B. Absätzen) bei.
   \item max. Zeilenbreite 2–3 Alphabete\\
     \mode<article>{sonst geht der Zeilenbezug verloren}
     abcdefghjklmnopqrstuvwxyzabcdefghjklmnopqrstuvwxyz
-  \item evtl. mehrere Spalten\\(nicht zu viele!)
+  \item evtl. mehrere Spalten \\(nicht zu viele!)
   \item genügend Rand\\
     \mode<article>{für Ausgleich im Grauwert;
       Der Grauwert ist sehr wichtig für den ersten
@@ -841,9 +854,9 @@ verwendet. Mit der Schreibmaschine war aufgrund der Monotype-Schrift
 nur linksbündig möglich. Rechtbündig und zentriert kamen als
 Stilmittel mit der Digitalisierung hinzu während für professionellen
 Druck heutzutage Blocksatz verwendet wird. Für ein gleichmäßiges
-Aussehen des Textkörpers ist Blocksatz am besten. Allerdings ist er
-ungeeignet ohne die richtigen Hilfsmittel der Worttrennung, denn
-Blocksatz basiert auf leichtem Dehnen der Wortabstände.
+Aussehen des Textkörpers ist Blocksatz am besten. Allerdings basiert
+er auf leichtem Dehnen der Wortabstände und ist somit ungeeignet ohne
+die richtigen Hilfsmittel der Worttrennung.
 
 \begin{frame}{Textausrichtung – Grundsätzliches}
   \mode<article>{Hier die grundsätzlichen Überlegungen zur
@@ -997,9 +1010,8 @@ möglichst selten verwenden.
   \end{block}
   \begin{block}{\uppercase{Versalien}}<+-|only@+-5>
   \mode<article>{Versalien stammen aus der Schreibmaschinenzeit und
-    werden heute eher als aufdringliches Geschrei bei Vorkommen im
-    Fließtext empfunden. Wenn möglich, auf richtige Kapitälchen
-    ausweichen.}
+    werden heute im Fließtext eher als aufdringliches Geschrei
+    empfunden. Wenn möglich, auf richtige Kapitälchen ausweichen.}
     \begin{itemize}
     \item \uppercase{sehr} auffällig, \uppercase{schwer lesbar}
     \item auf \uppercase{Zeichenabstand} achten
@@ -1083,10 +1095,10 @@ aber unter Hervorhebungen schon ausreichend behandelt worden.
 \begin{frame}{Tabellen}
 \mode<article>{Tabellen wurden zur Schreibmaschinenzeit mit
   Tabulatoren gesetzt – heute stehen in allen mir bekannten
-  Textsatzprogrammen/-sprachen bessere Möglichkeiten. Allerdings sind
-  die Defaults meist schlecht lesbar: Zu viele (teils den
-  Lesefluss/Datenzusammengehörigkeit störende) Rahmen und zu geringe
-  Abstände sind häufig.}
+  Textsatzprogrammen/-sprachen bessere Möglichkeiten zur
+  Verfügung. Allerdings sind die Defaults meist schlecht lesbar: Zu
+  viele (teils den Lesefluss/Datenzusammengehörigkeit störende) Rahmen
+  und zu geringe Abstände sind häufig.}
   \begin{block}{Rahmen}
     nicht zu auffällig; Steigerung:
     \begin{enumerate}
@@ -1156,7 +1168,7 @@ aber unter Hervorhebungen schon ausreichend behandelt worden.
   \begin{exampleblock}{Beispiel}<+->
     \fontsize{9pt}{12pt}\selectfont\fontfamilylatinmodern
     Die Formel $E=m\cdot c^2$ ist für Fließtext noch gut geeignet.
-    Das etwas längere $\tau_{-\gamma(\O)}\colon E_2\to E_2$ auch noch,
+    Das etwas längere $\tau_{-\gamma(O)}\colon E_2\to E_2$ auch noch,
     aber 
     $\Omega(T+S)(f)
     = \tau^*_{T+S}(f)

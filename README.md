@@ -1,6 +1,6 @@
 # Material on a Talk about Typography
 
-This is the material for a talk about typography held at the 3. GPN (private) converence of the F3L-Community, 11.06.2016, University of Regensburg.
+This is the material for a talk about typography held in German at the 3. GPN (private) converence of the F3L-Community, 11.06.2016, University of Regensburg.
 
 It is meant as a short reference and overview on what typographical topics could and should be considered when creating documents of any type. A couple of tipps for common applications are included.
 
